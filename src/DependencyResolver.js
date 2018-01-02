@@ -146,7 +146,7 @@ class DependencyResolver {
         }
         dep.instance = dep.fn.apply(null, instances);
       } catch (error) {
-        this.cleanStack(error);
+        //this.cleanStack(error);
         this.errors.push(DependencyError.exception(callChain, error));
       }
 
